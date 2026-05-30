@@ -1,55 +1,113 @@
- Dcode Instruction Set (v2)
- 🔹 Variables
-- `var:name=value` → Declare and assign variable  
-  Example: `var:x=10`
+Dcode Instruction Set (v1.0.0)
+Complete Instruction Set
 
-🔹 Printing & Math
-- `print:text` → Print text or variable values
-- `print:expression` → Evaluate math (+, -, *, /, ^)
-- `print:root:value,n` → Calculate n‑th root of value
-- `print:exp:base,exponent` → Calculate base^exponent
-- `print:random:min,max` → Generate random integer between min and max
+Variables
+- `var:x=10`
 
- 🔹 Arduino (stubs)
-- `arduino:compile` → Compile Arduino sketch
-- `arduino:upload` → Upload Arduino sketch
-- `arduino:serial:...` → Send serial command
+Printing & Math
+- `print:text Hello World`
+- `print:add:5,3`
+- `print:sub:10,4`
+- `print:mul:6,7`
+- `print:div:20,5`
+- `print:pow:2,8`
+- `print:sqrt:81`
+- `print:rand:1,100`
+- `print:expression 2+3*4`
 
-🔹 Input
-- `input:keyboard:KEY` → Check if key is pressed (A, B, C, SPACE, ENTER, ESC)
-- `input:mouse` → Get mouse position
+Arduino
+- `arduino:compile`
+- `arduino:upload`
+- `arduino:serial:LED_ON`
 
-🔹 Networking
-- `net:bluetooth:scan` → Scan Bluetooth devices
-- `net:wifi:list` → List Wi‑Fi networks
- 
-🔹 Utilities
-- `console:clear` → Clear console output
-- `console:log:msg` → Log message to console
+Input
+- `input:keyboard:A`
+- `input:mouse`
 
- 🔹 AI Lifecycle
-- `ai:create:model [params]`
-  Example: `ai:create:model name=ModelA layers=3 units=128 optimizer=adam loss=mse metrics=accuracy`
-- `ai:train [params]`
-  Example: `ai:train model=ModelA dataset=train.csv epochs=10 batch=32 device=GPU`
-- `ai:evaluate [params]`
-  Example: `ai:evaluate model=ModelA dataset=validation.csv metrics=accuracy,precision`
-- `ai:visualize type=<loss|accuracy>` → Shows training curves
-- `ai:run input=<file>` → Runs inference
-- `ai:test input=<file> expected=<file>` → Compares predictions vs expected
-- `ai:status` → Prints current models and device
-- `ai:reset` → Clears all models and resets device to CPU
+Networking
+- `net:bluetooth:scan`
+- `net:wifi:list`
 
-🔹 Persistence
-- `ai:save path=<file>` → Save model state
-- `ai:load path=<file>` → Load model state
-- `ai:export format=<onnx|json> path=<file>` → Export model
-- `ai:import path=<file>` → Import model
-- `ai:share path=<file> target=<repo>` → Share model externally
+Console & System
+- `console:clear`
+- `console:log:message`
+- `sys:time`
+- `sys:date`
+- `sys:status`
+- `sys:reset`
 
- 🔹 Device Control
-- `ai:set:device <CPU|GPU|NPU>` → Switch execution device
- 🔹 Dataset Handling
-- `ai:load:dataset path=<file>` → Load dataset (simulated row count)
+Loops & Delay
+- `loop:for 3`
+- `loop:while x<5`
+- `delay:1000`
 
+AI Lifecycle
+- `ai:create:model name=ModelA layers=3 units=128`
+- `ai:train model=ModelA dataset=train.csv epochs=10 batch=32 device=GPU`
+- `ai:evaluate model=ModelA dataset=validation.csv metrics=accuracy,precision`
+- `ai:visualize type=loss`
+- `ai:run input=test.csv`
+- `ai:test input=test.csv expected=expected.csv`
+- `ai:status`
+- `ai:reset`
 
+Persistence
+- `ai:save path=modelA.dcode`
+- `ai:load path=modelA.dcode`
+- `ai:export format=onnx path=modelA.onnx`
+- `ai:import path=modelB.json`
+- `ai:share path=modelA.onnx target=repo`
+
+Device Control
+- `ai:set:device GPU`
+
+Dataset Handling
+- `ai:load:dataset path=data.csv`
+
+Agents
+- `ai:agent:create name=Helper type=chat persona=friendly`
+- `ai:agent:bind name=Helper persona=friendly`
+- `ai:agent:voice name=Helper style=calm tone=soft language=en`
+- `ai:agent:emotion name=Helper type=happy`
+- `ai:agent:wake name=Helper word=Hello`
+- `ai:agent:dialogue mode=interactive`
+- `ai:agent:list`
+- `ai:agent:status name=Helper`
+- `ai:agent:assign name=Helper task=assist`
+- `ai:agent:delete name=Helper`
+
+Voice
+- `ai:voice:enable model=VoiceNet`
+- `ai:voice:listen device=mic1`
+- `ai:voice:recognize language=en`
+- `ai:voice:speak text=HelloWorld`
+- `ai:voice:dialogue mode=chat`
+- `ai:voice:device list`
+- `ai:voice:wake word=Hey`
+- `ai:voice:emotion type=excited`
+- `ai:voice:mute`
+- `ai:voice:unmute`
+
+Export & Deployment
+- `export:exe path=game.exe`
+- `export:apk path=game.apk`
+- `export:bin path=game.bin`
+- `export:app path=game.app`
+- `export:multi targets=exe,apk`
+- `export:installer format=msi path=setup.msi`
+- `export:publish target=repo path=game.exe`
+- `export:status`
+- `export:reset`
+- `export:clean`
+
+Plugins
+- `plugin:import path=plugin.dll`
+- `plugin:load name=TestPlugin`
+- `plugin:list`
+- `plugin:remove name=TestPlugin`
+
+Libraries
+- `library:import path=mathlib.dll`
+- `library:bind name=MathLib`
+- `library:list`
+- `library:remove name=MathLib`
