@@ -10,7 +10,7 @@ Featuress
 - plugin system (create your custom instructions)
 
 installing
-download the Dcode IDE folder on this rrepository, and Run DcodeIDE.EXE
+download DcodeIDE.zip and DcodeIDE.pck on this rrepository, decompress and Run DcodeIDE.EXE
 
 Changelog
 - check CHANGELOG.md for updates!
