@@ -10,7 +10,7 @@ Featuress
 - plugin system (create your custom instructions)
 
 installing
-download DcodeIDE.7z and DcodeIDE.pck on this rrepository, decompress and Run DcodeIDE.EXE
+download Docde folder on this rrepository, decompress and Run DcodeIDE.EXE adn keep Dcode.pck on the same folder than the.exe
 
 Changelog
 - check CHANGELOG.md for updates!
