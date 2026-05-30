@@ -1,0 +1,35 @@
+Dcode v1.0 Executor Commands
+
+Variables
+
+var:name=value          → Declare and assign variable
+                        Example: var:x=10
+Printing & Math
+
+print:text              → Print text or variable values
+print:root:value,n      → Calculate n-th root of value
+print:exp:base,exponent → Calculate base^exponent
+print:random:min,max    → Generate random integer between min and max
+print:expression        → Evaluate math (+, -, *, /, ^)
+
+Arduino (stubs)
+
+arduino:compile         → Compile Arduino sketch
+arduino:upload          → Upload Arduino sketch
+arduino:serial:...      → Send serial command
+
+Input
+
+input:keyboard:KEY      → Check if key is pressed (A, B, C, SPACE, ENTER, ESC)
+input:mouse             → Get mouse position
+
+Networking
+
+net:bluetooth:scan      → Scan Bluetooth devices
+net:wifi:list           → List Wi-Fi networks
+
+Utilities
+
+console:clear           → Clear console output
+console:log:msg         → Log message to console
+
