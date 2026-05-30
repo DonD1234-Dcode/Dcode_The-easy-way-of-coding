@@ -1,0 +1,16 @@
+DcodeIDE Installation & Usage Guide
+-----------------------------------
+1. Download the latest release files:
+   - DcodeIDE.7z
+   - DcodeIDE.pck
+2. Extract DcodeIDE.7z using 7-Zip (recommended).
+   - This will give you DcodeIDE.exe 
+3. Place DcodeIDE.pck in the same folder as DcodeIDE.exe.
+   - The executable will automatically load the .pck when run.
+4. Run DcodeIDE.exe directly.
+   - DcodeIDE.exe is a standalone build.
+Notes:
+- Works on Windows (64-bit).
+- Keep DcodeIDE.exe and DcodeIDE.pck together in the same directory.
+- For updates, check the GitHub Releases page or CHANGELOG.md.
+- If antivirus flags the file, it is a false positive due to compression.
