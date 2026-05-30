@@ -1,35 +1,55 @@
-Dcode v1.0 Executor Commands
+ Dcode Instruction Set (v2)
+ 🔹 Variables
+- `var:name=value` → Declare and assign variable  
+  Example: `var:x=10`
 
-Variables
+🔹 Printing & Math
+- `print:text` → Print text or variable values
+- `print:expression` → Evaluate math (+, -, *, /, ^)
+- `print:root:value,n` → Calculate n‑th root of value
+- `print:exp:base,exponent` → Calculate base^exponent
+- `print:random:min,max` → Generate random integer between min and max
 
-var:name=value          → Declare and assign variable
-                        Example: var:x=10
-Printing & Math
+ 🔹 Arduino (stubs)
+- `arduino:compile` → Compile Arduino sketch
+- `arduino:upload` → Upload Arduino sketch
+- `arduino:serial:...` → Send serial command
 
-print:text              → Print text or variable values
-print:root:value,n      → Calculate n-th root of value
-print:exp:base,exponent → Calculate base^exponent
-print:random:min,max    → Generate random integer between min and max
-print:expression        → Evaluate math (+, -, *, /, ^)
+🔹 Input
+- `input:keyboard:KEY` → Check if key is pressed (A, B, C, SPACE, ENTER, ESC)
+- `input:mouse` → Get mouse position
 
-Arduino (stubs)
+🔹 Networking
+- `net:bluetooth:scan` → Scan Bluetooth devices
+- `net:wifi:list` → List Wi‑Fi networks
+ 
+🔹 Utilities
+- `console:clear` → Clear console output
+- `console:log:msg` → Log message to console
 
-arduino:compile         → Compile Arduino sketch
-arduino:upload          → Upload Arduino sketch
-arduino:serial:...      → Send serial command
+ 🔹 AI Lifecycle
+- `ai:create:model [params]`
+  Example: `ai:create:model name=ModelA layers=3 units=128 optimizer=adam loss=mse metrics=accuracy`
+- `ai:train [params]`
+  Example: `ai:train model=ModelA dataset=train.csv epochs=10 batch=32 device=GPU`
+- `ai:evaluate [params]`
+  Example: `ai:evaluate model=ModelA dataset=validation.csv metrics=accuracy,precision`
+- `ai:visualize type=<loss|accuracy>` → Shows training curves
+- `ai:run input=<file>` → Runs inference
+- `ai:test input=<file> expected=<file>` → Compares predictions vs expected
+- `ai:status` → Prints current models and device
+- `ai:reset` → Clears all models and resets device to CPU
 
-Input
+🔹 Persistence
+- `ai:save path=<file>` → Save model state
+- `ai:load path=<file>` → Load model state
+- `ai:export format=<onnx|json> path=<file>` → Export model
+- `ai:import path=<file>` → Import model
+- `ai:share path=<file> target=<repo>` → Share model externally
 
-input:keyboard:KEY      → Check if key is pressed (A, B, C, SPACE, ENTER, ESC)
-input:mouse             → Get mouse position
+ 🔹 Device Control
+- `ai:set:device <CPU|GPU|NPU>` → Switch execution device
+ 🔹 Dataset Handling
+- `ai:load:dataset path=<file>` → Load dataset (simulated row count)
 
-Networking
-
-net:bluetooth:scan      → Scan Bluetooth devices
-net:wifi:list           → List Wi-Fi networks
-
-Utilities
-
-console:clear           → Clear console output
-console:log:msg         → Log message to console
 
