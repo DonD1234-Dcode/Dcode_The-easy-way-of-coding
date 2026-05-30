@@ -1,7 +1,7 @@
 # Dcode_The-easy-way-of-coding
 Dcode, a new coding language based on simplicity, no complex syntaxes, 
 easy to code, easy to modify
-make coding accesible and fun, not boring and complex
+make coding accesible and fun, not boring and complex, made for people with no experience coding, as well as people that codes daily
 
 Featuress
 - colon based syntax
