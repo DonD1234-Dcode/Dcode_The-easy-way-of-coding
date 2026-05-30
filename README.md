@@ -30,3 +30,8 @@ Changelog
 This project is licensed under the terms of the [MIT License](LICENSE).
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+
+ RELEASES
+
+ V1.0.0 Released, first major release
