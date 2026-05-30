@@ -11,3 +11,6 @@ Featuress
 
 installing
 download the Dcode IDE folder on this rrepository, and Run DcodeIDE.EXE
+
+Changelog
+- check CHANGELOG.md for updates!
