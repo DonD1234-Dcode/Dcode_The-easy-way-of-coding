@@ -9,8 +9,5 @@ Featuress
 - modular libraries (make your own)
 - plugin system (create your custom instructions)
 
-installing
-download Docde folder on this rrepository, decompress and Run DcodeIDE.EXE adn keep Dcode.pck on the same folder than the.exe
-
 Changelog
 - check CHANGELOG.md for updates!
