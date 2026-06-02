@@ -8,6 +8,7 @@ Featuress
 - easy learning curve
 - modular libraries (make your own)
 - plugin system (create your custom instructions)
+- (for these last functions wait for v3.0.0)
 
 Changelog
 - check CHANGELOG.md for updates!
