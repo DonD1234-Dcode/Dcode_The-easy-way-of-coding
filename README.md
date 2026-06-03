@@ -25,8 +25,6 @@ Changelog
  Development
 
 - Built with **Godot Engine** (Windows Desktop export).  
-- Project stripped and optimized for size (<25 MB executable).  
-- Assets compressed with 7‑Zip for GitHub distribution.
 
 This project is licensed under the terms of the [MIT License](LICENSE).
 
